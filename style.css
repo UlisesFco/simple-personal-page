@@ -1,0 +1,20 @@
+/* Style page for the webpage */
+
+/* Change the text color of the navbar section on the top of the page */
+#navbar-top .nav-link{
+    color: #fff;
+}
+
+.socials {
+    list-style-type: none; /* Remove bullets */
+    padding: 0; /* Remove padding */
+    margin: 0; /* Remove margins */
+}
+
+h6.job-desc{
+    color:#aeabab
+}
+
+.presentation {
+    padding:70px ;
+}
