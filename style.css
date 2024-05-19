@@ -5,6 +5,15 @@
     color: #fff;
 }
 
+.dark-subtitle {
+    text-align: center;
+    color: white;
+}
+
+.light-subtitle {
+    text-align: center;
+}
+
 .socials {
     list-style-type: none; /* Remove bullets */
     padding: 0; /* Remove padding */
@@ -12,9 +21,94 @@
 }
 
 h6.job-desc{
-    color:#aeabab
+    color:#b3b0b0
 }
 
 .presentation {
     padding:70px ;
 }
+
+.card.no-carousel:hover{
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
+    -webkit-transform: scale(1.05);
+    -moz-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    -o-transform: scale(1.05);
+}
+
+.card:hover {
+    -webkit-filter: brightness(95%);
+    -webkit-transition: all 0s ease;
+    -moz-transition: all 0s ease;
+    -o-transition: all 0s ease;
+    -ms-transition: all 0s ease;
+    transition: all 0s ease;
+}
+
+.carousel-control-next,
+.carousel-control-prev , .carousel-indicators {
+    filter: invert(100%);
+    -webkit-filter: invert(100%);
+}
+
+@media (max-width: 768px) {
+    .carousel-inner .carousel-item > div {
+      display: none;
+    }
+    .carousel-inner .carousel-item > div:first-child {
+      display: block;
+    }
+}
+
+.carousel-inner .carousel-item.active,
+.carousel-inner .carousel-item-start,
+.carousel-inner .carousel-item-next,
+.carousel-inner .carousel-item-prev {
+    display: flex;
+   /* transition-duration: 10s; */
+}
+
+/* display 4 */
+@media (min-width: 768px) {
+    .carousel-inner .carousel-item-right.active,
+    .carousel-inner .carousel-item-next,
+    .carousel-item-next:not(.carousel-item-start) {
+        transform: translateX(25%) !important;
+    }
+
+    .carousel-inner .carousel-item-left.active,
+    .carousel-item-prev:not(.carousel-item-end),
+    .active.carousel-item-start,
+    .carousel-item-prev:not(.carousel-item-end) {
+        transform: translateX(-25%) !important;
+    }
+
+    .carousel-item-next.carousel-item-start, .active.carousel-item-end {
+        transform: translateX(0) !important;
+    }
+
+    .carousel-inner .carousel-item-prev,
+    .carousel-item-prev:not(.carousel-item-end) {
+        transform: translateX(-25%) !important;
+        -webkit-transform: translateX(-25%) !important;
+        -moz-transform: translateX(-25%) !important;
+        -ms-transform: translateX(-25%) !important;
+        -o-transform: translateX(-25%) !important;
+    }
+}
+
+.parallax {
+    /* The image used */
+    background-image: url("https://place-hold.it/400x240");
+
+    /* Set a specific height */
+    height: 100%;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
